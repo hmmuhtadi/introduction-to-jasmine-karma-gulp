@@ -1,0 +1,19 @@
+{
+  "name": "mvcapplication",
+  "version": "0.0.1",
+  "description": "testing workflow",
+  "main": "index.js",
+  "author": "raffan",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-jasmine": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7"
+  }
+}

@@ -1,0 +1,133 @@
+/*--Style for select Matrics widget--*/
+
+#metrics-container
+{
+    width:958px;
+    float:left;
+    background-color:#fbf4ea;
+    border-left:1px solid #D2C5B5;
+    border-right:1px solid #D2C5B5;
+    border-bottom:1px solid #D2C5B5;
+}
+.metrics-title
+{
+    width:100%;
+    float:left;
+    color:#932D1F;
+    font-size:14px;
+}
+ul.group-metrics {
+    padding: 1px 0px 1px 1px;
+}
+ul.group-metrics li
+{
+    background-color:#ebe8d9;
+    float:left;
+    width:100%;  
+    font-size:13px;
+}
+
+ul.metrics li{
+    padding-left: 10px;
+    background: white;
+}
+#available-metrics-container
+{
+    width: 335px;
+    float: left;
+    padding:25px 12px 25px 20px; 
+}
+
+#selected-metrics-container {
+    width: 335px;
+    float: left;
+    padding:25px 12px 25px 20px; 
+}
+
+#available-metrics {
+    background-color: #FFFFFF;
+    border: 1px solid #E6E3DC;
+    float: left;
+    height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: inherit;
+    padding-right: 2px;
+}
+
+#selected-metrics
+{
+    background-color: #FFFFFF;
+    border: 1px solid #E6E3DC;
+    float: left;
+    height: 150px;
+    overflow-y: auto;
+    width: inherit;
+}
+#selected-matrics {
+   padding:5px 10px 5px 5px;
+}
+
+
+#available-metrics ul.metrics li.selectedMetric, #selected-matrics li.available-metric {
+       display: none;
+}
+
+#available-metrics ul.metrics li.available-metric {
+    background-color: #ff9900;
+
+}
+#selected-matrics li.selected-metric {
+    background-color: #ff9900;
+}
+
+.metric {
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+}
+
+.button-group {
+    width: 107px;
+    height: 100%;
+    float: left;
+    margin-top: 44px;
+}
+
+.button-group button{
+    width: 105px;
+    height: 28px;
+    background-color:#f79324;
+    color:#FFFFFF;
+    border:1px solid #f9b56c;
+    margin-bottom: 5px;
+}
+
+/*--END select Matrics widget--*/
+
+#available-metrics ul.group-metrics li ul.metrics li.selected-metric {
+    background-color: #ff9900;
+}
+
+#available-metrics ul.group-metrics li ul.metrics li.hidden-metric {
+    display: none;
+}
+
+#selected-metrics ul.metrics li.selected-metric {
+    background-color: #ff9900;
+}
+
+.button-group button {
+    cursor: pointer;
+}
+
+.button-group button.disabled-button {
+    background-color: #d3d3d3;
+    cursor: inherit;
+}
+
+.button-group.accept-button {
+   margin-top:90px;
+}

@@ -1,0 +1,56 @@
+﻿<div id="metrics-container">
+    <div id="available-metrics-container">
+        <div class="metrics-title">
+            Available metrics for executive overview
+        </div>
+        <div id="available-metrics">
+            <ul class="group-metrics" data-bind="foreach: metricGroups">
+                <li>
+                    <span data-bind="text: GroupName"></span>
+                    <ul class="metrics" data-bind="foreach: $parent.availableMetrics">
+                        <li class="metric" data-bind="text: MetricName,if: GroupName == $parent.GroupName, click: $root.availableMetricOnClick, css:{'selected-metric': IsSelected(), 'hidden-metric': GroupName != $parent.GroupName}"></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id ="add-remove-metric-buttons" class="button-group">
+        <button data-bind="click: addMetricsOnClick, disable: addRestriction, css:{'disabled-button': addRestriction}">Add&nbsp;&#8250;</button>
+        <button data-bind="click: removeMetricsOnClick, disable: removeRestriction, css:{'disabled-button': removeRestriction}">&#8249;&nbsp;Remove</button>
+    </div>
+    
+    <div id="selected-metrics-container">
+        <div class="error-message">
+            <span></span>
+        </div>
+        <div class="metrics-title">
+            Displayed metrics (Max 8)
+        </div>
+        <div id="selected-metrics">
+            <ul data-bind="foreach: selectedMetrics" id="selected-matrics" class="metrics">
+                <li data-bind="click: $root.selectedMetricOnClick, text: MetricName, css:{'selected-metric': IsSelected()}" class="metric"></li>
+            </ul>
+        </div>
+        @*<div class="error-message">
+            <span>@Html.Raw("*Some Message 1")</span>
+        </div>*@
+    </div>
+    
+    <div id="move-metric-buttons" class="button-group">
+        <button data-bind="click: moveUpOnClick">Move up &#8743;</button>
+        <button data-bind="click: moveDownOnClick">Move down &#8744;</button>
+    </div>
+    
+    <div id="accept-cancel-metric-buttons" class="button-group accept-button">
+        <button data-bind="click: acceptOnClick">&#10003 Accept</button>
+        <button data-bind="click: cancelOnClick">☓ Cancel</button>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        SelectMetrics.initialize(DummyData.data);
+    });
+</script>

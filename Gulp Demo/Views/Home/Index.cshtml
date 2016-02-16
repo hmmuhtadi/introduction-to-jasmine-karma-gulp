@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Welcome to Gulp demo!!</h1>
+<section>
+    <h2>Javascript and css change sync:</h2>
+    <h3 id="number1" class="number1"></h3>
+    <h3 id="number2" class="number2"></h3>
+</section>
+
+<section>
+    <h2>Click sync:</h2>
+    <button type="button" onclick="createJavaScriptEvaluatorBlock: alert('button clicked');">Click me!</button>
+</section>
+
+
+<section>
+    <h2>Scroll sync:</h2>
+    @Html.Partial("_LargeText")
+</section>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var number1 = myClass1.getNumber();
+        var number2 = myClass2.getNumber();
+
+        $("#number1").html("First number is:" + number1);
+        $("#number2").html("Second number is:" + number2);
+        
+    });
+</script>

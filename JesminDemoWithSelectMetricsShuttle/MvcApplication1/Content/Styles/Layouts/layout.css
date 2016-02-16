@@ -1,0 +1,391 @@
+﻿body {
+    font-size: 13px;
+    font-family: Arial, Verdana, Helvetica, Sans-Serif;    
+    background-color: #fff;
+    margin:0;
+}
+/*--Global style--*/
+img
+{
+    border:none;
+}
+ul
+{
+    list-style-type: none;   
+    padding: 0;
+    margin:0;
+}
+a
+{
+    text-decoration:none;
+}
+/*--END of Global style--*/
+
+/*--Styles for login form--*/
+
+.login-page-header
+{
+    background-color: #C8B9A4;
+    border-bottom: 1px solid #913222;
+    color: #634329;
+    display: block;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+    width: 100%;
+}
+.login-form
+{
+    border: 1px solid #913222;
+    margin: 50px auto;
+    width: 350px;
+    overflow:hidden;
+}
+
+.login-form .validation-summary-errors ul
+{
+    padding:10px 0 0 20px;
+    font-size:11px;
+}
+.login-submit-button
+{
+    background-color: #C8B9A4;
+    color: #634329;
+    font-size: 13px;
+    font-weight: bold;
+    width: 100px;
+    border: 1px solid #913222;
+    padding: 0.4em 1em;
+}
+.row
+{    
+   float: left;
+   width:100%;
+   margin-bottom:10px;
+}
+.row .control-label {   
+    text-align: left;  
+    display: block;   
+    color:#923526;  
+    float:left;
+    width: 120px; 
+    font-weight:bold; 
+    padding-left:20px;
+}
+
+.row span
+{
+    float:left;
+    margin-right: 5px;
+}
+.row input {
+    border: 1px solid #913222;
+    margin: 0;
+    width: 180px;  
+}
+.row input[type="checkbox"] {
+    float: left;   
+    display: inline-block;   
+    width: auto;
+    cursor: pointer;
+    margin-left:0px;
+    min-height: 20px;
+}
+
+/*--END--*/
+
+/*--Style for master content*/
+#main
+{    
+    width:960px;  
+    margin:0 auto;
+}
+header, footer, nav, section {
+    display: block;
+}
+
+#header
+{    
+    width: 100%;
+    float:left;
+}
+.boby-content
+{
+     width: 100%;
+    float:left;
+}
+#dashboard-layout
+{
+    width:inherit;
+    float:left;
+    min-height:500px;
+}
+#footer
+{
+    width:100%;
+    border-top:1px solid #DDD5CC;   
+    margin-top:10px;
+    padding: 4px 0 20px;
+    float:left;   
+}
+#footer span
+{
+    color: #913222;
+    font-size:11px;
+}
+#footer span a
+{
+}
+.left-span
+{
+    float:left;
+}
+.right-span
+{
+    float:right;
+}
+
+/*--END of master content--*/
+.nav-container
+{
+    float:left;   
+    width:100%;
+}
+.nav-container ul
+{
+    float:left;
+}
+.nav-container ul.left-nav
+{
+    width:777px;    
+}
+nav-container ul.right-nav
+{
+    width:182px;   
+    margin-left:1px; 
+}
+.nav-container ul li
+{
+    float:left;  
+    text-align:center;  
+    border-bottom: 1px solid #D2C5B5; 
+}
+ul.left-nav
+{
+    margin-right:1px;    
+}
+ul.left-nav li a
+{
+    margin-right:1px;
+}
+.nav-container ul li a
+{
+    background-color:#f1eee9;
+    color:#932d1f;
+    font-weight:bold;
+    padding:9px 0 0;    
+    display:block;
+    height:25px;
+
+}
+.nav-container ul li.tab-header-1
+{
+    width:202px;
+}
+.nav-container ul li.tab-header-2
+{
+    width:184px;
+}
+.nav-container ul li.tab-header-3
+{
+    width:391px;    
+}
+.nav-container ul.left-nav li.tab-header-3 a
+{
+    margin-right: 0px;
+}
+ul.right-nav li a
+{
+    background-color: #FEF2D8;
+}
+.nav-container ul li.tab-header-4
+{
+    width:91px;   
+    color:#867059;    
+}
+.nav-container ul li.tab-header-5
+{
+    width:90px;      
+    color:#867059;    
+}
+.nav-container ul li.tab-header-4 a
+{    
+    padding: 8px 0 0;     
+    height:26px;
+    margin-right: 1px;
+}
+.nav-container ul li.tab-header-5 a
+{
+    padding: 7px 0 0px;       
+    height:27px;
+}
+
+.down-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid #8b3214;
+  border-right: 4px solid transparent;
+  border-bottom: 0 dotted;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+.up-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 0px dotted;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid #8b3214;
+  border-left: 4px solid transparent;
+  content: "";
+}
+
+/*-----Styles for top navigation-----*/
+.top-nav
+{
+    border-left: 1px solid #D7D7D7;
+    border-right: 1px solid #D7D7D7;
+    border-bottom: 1px solid #D7D7D7;
+    height: 18px;
+    margin: 0 auto;
+    width: 100%;
+}
+.top-left-nav
+{
+    float:left;
+    width:400px;
+}
+.top-right-nav
+{
+    width:500px;
+    text-align:right;
+    float:right;
+}
+.user-info
+{
+    border-right:1px solid #cfcfcf;
+    padding-right:8px;
+}
+.top-nav .top-right-nav ul li
+{
+    float:right;
+}
+.top-nav ul 
+{
+    font: 11px Arial;    
+}
+.top-nav ul li
+{
+    float:left;    
+    color:#b2b2b2;   
+    margin-top: 3px;
+}
+.top-nav .top-left-nav ul li a.first-nav
+{
+     border-left:none;
+}
+.top-nav .top-right-nav ul li a.first-nav
+{
+     border-right:none;
+     color:#e7530d;
+}
+.top-nav ul li a.last-nav
+{
+    border-right:none;
+}
+.top-nav ul li a
+{
+    color:#8b3117;
+    padding: 0 8px;
+    border-right:1px solid #cfcfcf;
+    border-left:1px solid #e4e4e4;
+}
+/*--END of top navigation--*/
+.brand-logo
+{
+    float:left;
+    margin:0 auto;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    width: 100%;
+}
+.prism-logo
+{
+    float:left;
+    margin-left: 10px;
+}
+.novartis-logo
+{
+    float:right;
+    margin-right:66px;
+}
+.header-separator
+{    
+    width:960px;
+    float:left;
+}
+.left-separator
+{
+    background-color: #923222;
+    float: left;    
+    width: 777px;
+    margin-right:1px;
+    height:2px;
+}
+.right-separator
+{
+    background-color: #faaf18;
+    float: left;    
+    width: 182px;
+    height:2px;
+}
+
+
+/*--Styles for validation helpers--*/
+.field-validation-error {
+    color: #f00;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #f00;
+    background-color: #fee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #f00;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+/*--END of validation helpers--*/
+
+.breadCrumb
+{
+    margin:5px 5px 5px 5px;
+    float:left;
+}
+
+
+
